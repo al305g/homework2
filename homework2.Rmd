@@ -1,11 +1,11 @@
 ---
-title: "Homework #1 -- Pet Names Dataset"
-author: "Musab Isah\n"
+title: "Homework #2 -- Pet Names Dataset"
+author: "Abduiiah jaber al.Mutairi\n"
 date: "`r Sys.Date()`"
 output: github_document
 ---
 
-**Student ID:** Type your Student ID here
+**Student ID:** 2210002119
 
 **Deadline:** 23:59 on Monday, 21 March 2022
 
@@ -26,9 +26,9 @@ library(ggrepel)
 
 
 ```{r}
-
+nrow(Seatbelts)
 ```
-Write your answer here: 
+Write your answer here: 52519
 
 *Knit the document, commit your changes with a commit message that says "Completed Exercise 1", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
@@ -36,9 +36,9 @@ Write your answer here:
 
 
 ```{r}
-
+ncol(Seatbelts)
 ```
-Write your answer here: 
+Write your answer here: 7
 
 *Knit the document, commit your changes with a commit message that says "Completed Exercise 2", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
@@ -46,8 +46,10 @@ Write your answer here:
 
 
 ```{r}
-
+seattlepets %>%
+  count(animal_name) %>%
+  arrange(desc(n))
 ```
-Write your answer here:
+Write your answer here:The most popuiar pet names in Seattle are Lucy with 439, Charlie with 387,and Luna with 355.
 
 *Knit the document, commit your changes with a commit message that says "Completed Exercise 3", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
