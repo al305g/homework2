@@ -37,7 +37,7 @@ Write your answer here: 52519
 
 ```{r}
 ncol(Seatbelts)
-```
+```.
 Write your answer here: 7
 
 *Knit the document, commit your changes with a commit message that says "Completed Exercise 2", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
